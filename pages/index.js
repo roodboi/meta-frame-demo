@@ -23,6 +23,10 @@ export default function Home() {
           <p className={styles.description}>
             Drift widget install in self contained iframe.
           </p>
+          <p>
+            @plugins.chat/drift-meta-frame@
+            {packageJson.dependencies['@plugins.chat/drift-meta-frame']}
+          </p>
         </main>
 
         <footer className={styles.footer}>
