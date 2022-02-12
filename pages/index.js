@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { initializeHost } from '@plugins.chat/drift-meta-frame'
-export default function Home() {
+import { initializeHost } from '@plugins.chat/drift-meta-frame';
 
+import packageJson from '../package.json';
+
+export default function Home() {
   useEffect(() => {
-    initializeHost({ log: true, meta_frame_origin: '/frame'  })
-  })
+    initializeHost({ log: true, meta_frame_origin: '/frame' });
+  });
 
   return (
     <>
