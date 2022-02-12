@@ -1,3 +1,3 @@
-# nextjs-y2uwle
+# Meta frame demo
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/nextjs-y2uwle)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/meta-frame-demo?file=README.md)
