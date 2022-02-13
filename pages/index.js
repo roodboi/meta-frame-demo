@@ -7,6 +7,7 @@ import packageJson from '../package.json';
 
 export default function Home() {
   useEffect(() => {
+    drift('showWelcomeMessage');
     initializeHost({ log: true, frame_url: '/frame' });
   });
 
