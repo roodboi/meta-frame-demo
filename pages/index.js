@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { initializeHost } from '@plugins.chat/drift-meta-frame';
+import { initializeHost, drift } from '@plugins.chat/drift-meta-frame';
 
 import packageJson from '../package.json';
 
 export default function Home() {
   useEffect(() => {
-    initializeHost({ log: true, meta_frame_origin: '/frame' });
+    initializeHost({ log: true, frame_url: '/frame' });
   });
 
   return (
@@ -27,6 +27,9 @@ export default function Home() {
             @plugins.chat/drift-meta-frame@
             {packageJson.dependencies['@plugins.chat/drift-meta-frame']}
           </p>
+          <button onClick={() => drift('showWelcomeMessage')}>
+            drift api pass through
+          </button>
         </main>
 
         <footer className={styles.footer}>
