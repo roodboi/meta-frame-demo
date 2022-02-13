@@ -27,12 +27,18 @@ export default function Home() {
               target="_blank"
               href="https://github.com/roodboi/meta-frame-demo"
             >
-              https://github.com/roodboi/meta-frame-demo
+              GitHub
             </a>
           </p>
-          <p>
-            @plugins.chat/drift-meta-frame@
-            {packageJson.dependencies['@plugins.chat/drift-meta-frame']}
+
+          <p className={styles.description}>
+            <a
+              target="_blank"
+              href="https://www.npmjs.com/package/@plugins.chat/drift-meta-frame"
+            >
+              @plugins.chat/drift-meta-frame@
+              {packageJson.dependencies['@plugins.chat/drift-meta-frame']}
+            </a>
           </p>
           <button onClick={() => drift('showWelcomeMessage')}>
             drift api pass through
