@@ -20,9 +20,12 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1 className={styles.title}>Meta Frame Demo</h1>
-
           <p className={styles.description}>
             Drift widget install in self contained iframe.
+            <br />
+            <a href="https://github.com/roodboi/meta-frame-demo">
+              https://github.com/roodboi/meta-frame-demo
+            </a>
           </p>
           <p>
             @plugins.chat/drift-meta-frame@
