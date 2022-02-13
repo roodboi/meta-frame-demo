@@ -23,7 +23,10 @@ export default function Home() {
           <p className={styles.description}>
             Drift widget install in self contained iframe.
             <br />
-            <a href="https://github.com/roodboi/meta-frame-demo">
+            <a
+              target="_blank"
+              href="https://github.com/roodboi/meta-frame-demo"
+            >
               https://github.com/roodboi/meta-frame-demo
             </a>
           </p>
